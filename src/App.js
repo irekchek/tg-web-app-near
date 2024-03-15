@@ -65,6 +65,21 @@ function App() {
         </div>
       </div>
 
+      <div className="portfolio-title">Portfolio</div>
+
+      <div className="portfolio-container">
+        <div className="left-container">
+          <img src="/img/hot-avatar.jpg" alt="Hot icon" className="hot-avatar"/>
+          <div className="hot-data">
+            <div className="hot-title">HOT</div>
+            <div className="hot-value">0.01</div>
+          </div>
+        </div>
+        <div className="right-container">
+          <img src="./img/arrow.svg" alt="Arrow icon" className="arrow-icon"/>
+        </div>
+      </div>
+
     </div>
   );
 }

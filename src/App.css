@@ -1,19 +1,58 @@
+
 @font-face {
-  font-family: 'Brass Mono';
-  src: url('../src/fonts/BrassMono-Regular.ttf') format('ttf');
+  font-family: 'NeoTech';
+  src: url('../src/fonts/NeoTech-Medium.ttf');
+  src: local('NeoTech Medium'), local('NeoTech-Medium'),
+  url('../src/fonts/NeoTech-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NeoTech';
+  src: url('../src/fonts/NeoTech.ttf');
+  src: local('NeoTech'),
+  url('../src/fonts/NeoTech.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Brass Mono';
-  src: url('../src/fonts/BrassMono-Bold.ttf') format('ttf');
-  font-weight: bold;
+  font-family: 'NeoTech';
+  src: url('../src/fonts/NeoTech-Light.ttf');
+  src: local('NeoTech Light'), local('NeoTech-Light'),
+  url('../src/fonts/NeoTech-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'NeoTech';
+  src: url('../src/fonts/NeoTech-Black.ttf');
+  src: local('NeoTech Black'), local('NeoTech-Black'),
+  url('../src/fonts/NeoTech-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NeoTech';
+  src: url('../src/fonts/NeoTech-Bold.ttf');
+  src: local('NeoTech Bold'), local('NeoTech-Bold'),
+  url('../src/fonts/NeoTech-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 * {
-  font-family: 'Brass Mono', monospace;
+  font-family: 'NeoTech Medium', sans-serif;
 }
 
 body {
@@ -79,8 +118,8 @@ body {
 }
 
 .username-text {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
   margin-right: 5px;
 }
 
@@ -103,8 +142,8 @@ body {
 .balance-amount {
   margin-top: 5px;
   margin-bottom: 20px;
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 .buttons-container {
@@ -166,7 +205,7 @@ body {
 }
 
 .hot-balance-number {
-  font-weight: bold;
+  font-weight: 800;
   margin-top: 5px;
   font-size: large;
 }
@@ -215,9 +254,69 @@ body {
   border-radius: 4px;
   background-color: sandybrown;
   height: 30%;
-
 }
 
-.collected {
-  font-size: smaller;
+.mining-data-mining {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.mining-data-collected {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.mining-data-value {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+
+.portfolio-title {
+  margin: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+}
+
+.portfolio-container {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hot-avatar {
+  width: 50px;
+  border-radius: 12px;
+}
+.hot-data {
+  margin-left: 15px;
+}
+
+.hot-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hot-value {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.arrow-icon {
+  width: 30px;
+  margin-top: 10px;
 }
