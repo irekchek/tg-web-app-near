@@ -36,6 +36,35 @@ function App() {
         </div>
       </div>
 
+      <div className="wrapper">
+        <div className="container-left">
+          <div className="hot-balance">
+            <div className="hot-balance-text">HOT Balance</div>
+            <div className="hot-balance-number">0.017920</div>
+          </div>
+          <div className="hot-animation"/>
+        </div>
+        <div className="container-right">
+          <div className="storage">
+            <div className="storage-text">Storage</div>
+
+            <div className="mining-container">
+              <div className="mining">
+                <div className="mining-scale"></div>
+              </div>
+              <div className="mining-data">
+                <div className="mining-data-mining">Mining</div>
+                <div className="mining-data-data">
+                  <div className="mining-data-collected">Collected</div>
+                  <div className="mining-data-value">0.014968</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
