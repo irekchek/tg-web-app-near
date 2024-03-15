@@ -1,12 +1,24 @@
-body {
-  background: antiquewhite;
-
+@font-face {
+  font-family: 'Brass Mono';
+  src: url('../src/fonts/BrassMono-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Brass Mono';
+  src: url('../src/fonts/BrassMono-Bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Brass Mono', monospace;
+}
+
+body {
+  background: antiquewhite;
+  margin: 0;
 }
 
 .header {
@@ -28,12 +40,13 @@ body {
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   margin-right: 5px;
 }
 
 .button {
+  background: transparent;
   border: none;
   cursor: pointer;
   display: flex;
@@ -41,9 +54,78 @@ body {
 }
 
 .shrimp-button {
+  font-family: 'Brass Mono', monospace;
+  font-size: medium;
   font-weight: bold;
+  padding: 4px 8px;
+  color: darkgrey;
+  background-color: #e8ffff;
+  border-radius: 16px;
+  border: 2px solid #e9ffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
 }
 
 .qr-code-button, .settings-button {
   padding: 5px;
+}
+
+.username-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.username-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+
+.balance-container {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.balance-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.balance-amount {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.button-balance {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #000;
+  border-radius: 16px;
+  background-color: #ffd700; /* Желтый цвет */
+  color: #000000; /* Цвет текста */
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 rgb(0, 0, 0);
+}
+
+.button-balance:last-child {
+  margin-right: 0;
 }
